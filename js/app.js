@@ -1,4 +1,6 @@
-
+/**
+AngularJS Application Code for Client Side Logics
+**/
 
 
 
