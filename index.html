@@ -18,6 +18,8 @@
 
 <link rel="stylesheet" href="/css/style.css"/>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
 
 
 
@@ -78,16 +80,26 @@
     </div> <!-- /container -->
 
 
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+ 
     <script src="library/bootstrap/js/bootstrap.min.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.20/angular.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-route.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-animate.js"></script>
 
-
-<script type="text/javascript" src="js/app.js"></script>
 <script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript">
+$(function(){
+  console.log();
+ $('#myCarousel').carousel({
+  interval: 1000
+});
+
+});
+ 
+
+</script>
 
 </body>
 

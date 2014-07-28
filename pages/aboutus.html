@@ -1,9 +1,43 @@
+<style type="text/css">
+	#myCarousel {
+  margin-top: 40px;
+  width: 300px;
+  height: 200px;
+}
 
-	<div class="jumbotron text-center">
-		<h1>About Us</h1>
+.carousel-linked-nav,
+.item img {
+  display: block; 
+  margin: 0 auto;
+}
 
-		<p>{{ message }}</p>
+.carousel-linked-nav {
+  width: 120px;
+  margin-bottom: 20px;   
+}
 
-<span class="glyphicon glyphicon-hdd" style="font-size:300px"></span> Star
-		<span class="btn btn-warning">Click</span>
+</style>
+<div class="jumbotron text-center">
+
+	<div id="myCarousel" class="carousel slide">
+  		<!-- Carousel items -->
+  		<div class="carousel-inner">
+
+    		<div class="active item">
+        		<img src="http://placehold.it/300x200/888&text=Item 1" />
+    		</div>
+
+    	<div class="item">
+       		 <img src="http://placehold.it/300x200/aaa&text=Item 2" />
+    	</div>
+
+    	<div class="item">
+        	<img src="http://placehold.it/300x200/444&text=Item 3" />
+    	</div>
+
+  </div>
+
 	</div>
+
+
+</div>
