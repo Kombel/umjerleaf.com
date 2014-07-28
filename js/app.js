@@ -1,4 +1,6 @@
-
+/**
+AngularJS Application Code for Client Side Logics
+**/
 
 
 
@@ -40,7 +42,7 @@ App.config(function($routeProvider){
 App.controller('mainController',function($scope){
 
 	$('#myCarousel').carousel({
-  			interval: 1000
+  			interval: 3000
 			});
 	$scope.message="Home: Welcome to AngularJS";
 	$scope.pageClass='page-home';
@@ -57,7 +59,7 @@ App.controller('contactController',function($scope){
 App.controller('aboutController',function($scope){
 		
 		$('#myCarousel').carousel({
-  			interval: 1000
+  			interval: 3000
 			});
 	$scope.message="About Us";
 	$scope.pageClass='page-aboutus';
