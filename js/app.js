@@ -1,6 +1,7 @@
 
 
 
+
 var App = angular.module('umjerApp',['ngRoute','ngAnimate']);
 
 
@@ -24,6 +25,7 @@ App.config(function($routeProvider){
 		.when('/aboutus',{
 
 			templateUrl: 'pages/aboutus.html',
+			controller: 'aboutController'
 		})
 		.when('/team',{
 
@@ -37,6 +39,9 @@ App.config(function($routeProvider){
 
 App.controller('mainController',function($scope){
 
+	$('#myCarousel').carousel({
+  			interval: 1000
+			});
 	$scope.message="Home: Welcome to AngularJS";
 	$scope.pageClass='page-home';
 
@@ -50,7 +55,10 @@ App.controller('contactController',function($scope){
 
 
 App.controller('aboutController',function($scope){
-
+		
+		$('#myCarousel').carousel({
+  			interval: 1000
+			});
 	$scope.message="About Us";
 	$scope.pageClass='page-aboutus';
 });

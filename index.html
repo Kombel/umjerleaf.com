@@ -18,6 +18,8 @@
 
 <link rel="stylesheet" href="/css/style.css"/>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
 
 
 
@@ -36,7 +38,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">UmjerLeaf</a>
+          <a class="navbar-brand" href="#" style="margin-top:2px">Umjer<span style="padding: 2px;background:white;border-radius:5px;color:black">Leaf</span></a>
         </div>
         <div class="navbar-collapse collapse">
          
@@ -49,7 +51,8 @@
                   <li><a href="#">Software Development</a></li>
                    <li><a href="#">Data Visualization </a></li>
                    <li><a href="#">Networking</a></li>
-                     <li><a href="#">IT Services</a></li>
+                   <li><a href="#">Network</a></li>
+                     
                  
                 </ul>
               </li>
@@ -68,18 +71,35 @@
    	
    </div>
 
+  
+ <footer class="container-fluid" style="background:#287524;height:300px;">
+     <div >
+       <h4>Connect Socially with UmjerLeaf</h4>
+     </div>
+   </footer>
     </div> <!-- /container -->
 
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+ 
     <script src="library/bootstrap/js/bootstrap.min.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.20/angular.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-route.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-animate.js"></script>
 
-
-<script type="text/javascript" src="js/app.js"></script>
 <script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript">
+$(function(){
+  console.log();
+ $('#myCarousel').carousel({
+  interval: 1000
+});
+
+});
+ 
+
+</script>
 
 </body>
 
