@@ -1,9 +1,13 @@
 <!DOCTYPE html en="eng">
 <html ng-app="umjerApp">
 <head>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
 
-<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-<meta content="utf-8" http-equiv="encoding">
 	<title>UmjerLeaf</title>
 
 	<!--In Production Use from
@@ -29,8 +33,8 @@
 <body ng-controller="mainController">
 
     <!-- Static navbar -->
-    <div class="navbar navbar-default navbar-static-top" role="navigation">
-      <div class="container">
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container" style="margin-top:12px">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -40,6 +44,7 @@
           </button>
           <a class="navbar-brand" href="#" style="margin-top:2px">Umjer<span style="padding: 2px;background:white;border-radius:5px;color:black">Leaf</span></a>
         </div>
+
         <div class="navbar-collapse collapse">
          
           <ul class="nav navbar-nav navbar-right">
@@ -51,7 +56,7 @@
                   <li><a href="#">Software Development</a></li>
                    <li><a href="#">Data Visualization </a></li>
                    <li><a href="#">Networking</a></li>
-                   <li><a href="#">Network</a></li>
+                   <li><a href="#">Training</a></li>
                      
                  
                 </ul>
@@ -64,7 +69,9 @@
     </div>
 
 
-    <div>
+
+
+    <div style=" min-height: 70%;">
 
       <!-- Main component for a primary marketing message or call to action -->
    <div class="page {{pageClass}}" ng-view>
@@ -72,14 +79,14 @@
    </div>
 
   
- <footer class="container-fluid" style="background:#287524;height:300px;">
+
+    </div> <!-- /container -->
+
+ <footer class="container-fluid" style="background:#287524;height:30%;">
      <div >
        <h4>Connect Socially with UmjerLeaf</h4>
      </div>
    </footer>
-    </div> <!-- /container -->
-
-
  
     <script src="library/bootstrap/js/bootstrap.min.js"></script>
 
@@ -89,17 +96,7 @@
 
 <script type="text/javascript" src="js/custom.js"></script>
 <script type="text/javascript" src="js/app.js"></script>
-<script type="text/javascript">
-$(function(){
-  console.log();
- $('#myCarousel').carousel({
-  interval: 1000
-});
 
-});
- 
-
-</script>
 
 </body>
 

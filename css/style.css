@@ -1,26 +1,44 @@
-body{
-margin: 0;
-padding: 0;
-height: 100%;
-width: 100%;
-
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
+body {
+  margin: 0;
+  height: 100%;
+  width:100%;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
 .page{
 
 	height: auto;
 }
 
 footer{
-background-color: #333;
-padding-bottom: 30px;
 padding-top: 30px;
 text-align: center;
 display: block;
-bottom:0;
+bottom:0px;
+padding-bottom: 0;
+
 }
 header{
 	background-color: green;
-	z-index: 1000;
+	
 }
 .navbar-default {
 background-color: #287524;
@@ -48,8 +66,8 @@ color: white;
 .navbar-default {
 	border-color: transparent;
 	background-color: #287524;
-	position: fixed;
 	width: 100%;
+	margin: 0px;
 
 
 }
@@ -63,26 +81,40 @@ color: inherit;
 background-color: #eee;
 padding:10px;
 padding-top:15px;
-border-color: 
+
 }
 @media only screen and (min-width : 768px) {
     /* Make Navigation Toggle on Desktop Hover */
     .dropdown:hover .dropdown-menu {
         display: block;
-        background-color: #287524;
+        background-color: rgba(28, 80, 25, 1);
         color: white;
+        border-radius: 10px;
+        opacity: 0.9;
        }
-}
 .dropdown-menu > li > a {
-	color: white;
+	color: rgba(28, 80, 25, 1);
 	font-size: 18px;
+	color: white;
+	  background-color: rgba(28, 80, 25, 1);
+    border-radius: 50px;
+    
 }
 .nav >li > a{
 	font-size: 18px;
 }
 .navbar-default .navbar-nav > li > a:hover{
     color: white;
+
+  
 }
+
+
+
+}
+
+
+
 h2{
 	color:white;
 }
